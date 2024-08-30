@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OmniKernel
+import Foundation
+@_exported import OmniKernel
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct HttpResponse {
+  public let statusCode: Swift.Int
+  public let data: Foundation.Data?
+  public func successfullyReceived() -> Swift.Bool
+  public func decode<T>() throws -> T where T : Swift.Decodable
+}
+public struct HttpClient {
+  public init(scheme: OmniKernel.HttpClientScheme, host: Swift.String, defaultPath: Swift.String? = nil)
+  public mutating func addDefaultQueryParameter(key: Swift.String, value: Swift.String)
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func postJson(path: Swift.String? = nil, body: any Swift.Encodable) async throws -> OmniKernel.HttpResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func getJson(path: Swift.String? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.HttpResponse
+  #endif
+}
+public enum HttpClientScheme : Swift.String {
+  case Http
+  case Https
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HttpResponseError : Swift.String, Swift.Error {
+  case JSONDecoderError
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HttpMethod : Swift.String {
+  case Get
+  case Post
+  case Put
+  case Delete
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum HttpClientError : Swift.String, Swift.Error {
+  case URLEncodedError
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension OmniKernel.HttpClientScheme : Swift.Equatable {}
+extension OmniKernel.HttpClientScheme : Swift.Hashable {}
+extension OmniKernel.HttpClientScheme : Swift.RawRepresentable {}
+extension OmniKernel.HttpResponseError : Swift.Equatable {}
+extension OmniKernel.HttpResponseError : Swift.Hashable {}
+extension OmniKernel.HttpResponseError : Swift.RawRepresentable {}
+extension OmniKernel.HttpMethod : Swift.Equatable {}
+extension OmniKernel.HttpMethod : Swift.Hashable {}
+extension OmniKernel.HttpMethod : Swift.RawRepresentable {}
+extension OmniKernel.HttpClientError : Swift.Equatable {}
+extension OmniKernel.HttpClientError : Swift.Hashable {}
+extension OmniKernel.HttpClientError : Swift.RawRepresentable {}

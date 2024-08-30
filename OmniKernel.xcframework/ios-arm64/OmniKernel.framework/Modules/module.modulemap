@@ -1,0 +1,6 @@
+framework module OmniKernel {
+  umbrella header "OmniKernel.h"
+  export *
+
+  module * { export * }
+}
