@@ -7,23 +7,36 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct HttpResponse {
+public struct OmniResponse {
   public let statusCode: Swift.Int
-  public let data: Foundation.Data?
   public func successfullyReceived() -> Swift.Bool
+  public func getBodyAsString() throws -> Swift.String
   public func decode<T>() throws -> T where T : Swift.Decodable
 }
-public struct HttpClient {
-  public init(scheme: OmniKernel.HttpClientScheme, host: Swift.String, defaultPath: Swift.String? = nil)
+public struct OmniClient {
+  public init(scheme: OmniKernel.OmniClientScheme, host: Swift.String, defaultPath: Swift.String? = nil)
   public mutating func addDefaultQueryParameter(key: Swift.String, value: Swift.String)
+  public mutating func addDefaultHeader(key: Swift.String, value: Swift.String)
   #if compiler(>=5.3) && $AsyncAwait
-  public mutating func postJson(path: Swift.String? = nil, body: any Swift.Encodable) async throws -> OmniKernel.HttpResponse
+  public mutating func get(path: Swift.String? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
   #endif
   #if compiler(>=5.3) && $AsyncAwait
-  public mutating func getJson(path: Swift.String? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.HttpResponse
+  public mutating func post(path: Swift.String? = nil, body: Swift.String, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func postJson(path: Swift.String? = nil, body: any Swift.Encodable, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func put(path: Swift.String? = nil, body: Swift.String, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func putJson(path: Swift.String? = nil, body: any Swift.Encodable, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
+  #endif
+  #if compiler(>=5.3) && $AsyncAwait
+  public mutating func delete(path: Swift.String? = nil, body: (any Swift.Encodable)? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
   #endif
 }
-public enum HttpClientScheme : Swift.String {
+public enum OmniClientScheme : Swift.String {
   case Http
   case Https
   public init?(rawValue: Swift.String)
@@ -32,7 +45,7 @@ public enum HttpClientScheme : Swift.String {
     get
   }
 }
-public enum HttpResponseError : Swift.String, Swift.Error {
+public enum OmniResponseError : Swift.String, Swift.Error {
   case JSONDecoderError
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -40,7 +53,7 @@ public enum HttpResponseError : Swift.String, Swift.Error {
     get
   }
 }
-public enum HttpMethod : Swift.String {
+public enum OmniClientMethod : Swift.String {
   case Get
   case Post
   case Put
@@ -51,7 +64,11 @@ public enum HttpMethod : Swift.String {
     get
   }
 }
-public enum HttpClientError : Swift.String, Swift.Error {
+public enum OmniResult<Success, Failure> where Failure : Swift.Error {
+  case success(Success)
+  case failure(Failure)
+}
+public enum OmniClientError : Swift.String, Swift.Error {
   case URLEncodedError
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
@@ -59,15 +76,15 @@ public enum HttpClientError : Swift.String, Swift.Error {
     get
   }
 }
-extension OmniKernel.HttpClientScheme : Swift.Equatable {}
-extension OmniKernel.HttpClientScheme : Swift.Hashable {}
-extension OmniKernel.HttpClientScheme : Swift.RawRepresentable {}
-extension OmniKernel.HttpResponseError : Swift.Equatable {}
-extension OmniKernel.HttpResponseError : Swift.Hashable {}
-extension OmniKernel.HttpResponseError : Swift.RawRepresentable {}
-extension OmniKernel.HttpMethod : Swift.Equatable {}
-extension OmniKernel.HttpMethod : Swift.Hashable {}
-extension OmniKernel.HttpMethod : Swift.RawRepresentable {}
-extension OmniKernel.HttpClientError : Swift.Equatable {}
-extension OmniKernel.HttpClientError : Swift.Hashable {}
-extension OmniKernel.HttpClientError : Swift.RawRepresentable {}
+extension OmniKernel.OmniClientScheme : Swift.Equatable {}
+extension OmniKernel.OmniClientScheme : Swift.Hashable {}
+extension OmniKernel.OmniClientScheme : Swift.RawRepresentable {}
+extension OmniKernel.OmniResponseError : Swift.Equatable {}
+extension OmniKernel.OmniResponseError : Swift.Hashable {}
+extension OmniKernel.OmniResponseError : Swift.RawRepresentable {}
+extension OmniKernel.OmniClientMethod : Swift.Equatable {}
+extension OmniKernel.OmniClientMethod : Swift.Hashable {}
+extension OmniKernel.OmniClientMethod : Swift.RawRepresentable {}
+extension OmniKernel.OmniClientError : Swift.Equatable {}
+extension OmniKernel.OmniClientError : Swift.Hashable {}
+extension OmniKernel.OmniClientError : Swift.RawRepresentable {}

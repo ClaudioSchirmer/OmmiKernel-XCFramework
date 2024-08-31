@@ -16,8 +16,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpResponse",
-        "printedName": "HttpResponse",
+        "name": "OmniResponse",
+        "printedName": "OmniResponse",
         "children": [
           {
             "kind": "Var",
@@ -32,8 +32,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OmniKernel12HttpResponseV10statusCodeSivp",
-            "mangledName": "$s10OmniKernel12HttpResponseV10statusCodeSivp",
+            "usr": "s:10OmniKernel0A8ResponseV10statusCodeSivp",
+            "mangledName": "$s10OmniKernel0A8ResponseV10statusCodeSivp",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "HasStorage",
@@ -55,68 +55,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OmniKernel12HttpResponseV10statusCodeSivg",
-                "mangledName": "$s10OmniKernel12HttpResponseV10statusCodeSivg",
-                "moduleName": "OmniKernel",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "data",
-            "printedName": "data",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10OmniKernel12HttpResponseV4data10Foundation4DataVSgvp",
-            "mangledName": "$s10OmniKernel12HttpResponseV4data10Foundation4DataVSgvp",
-            "moduleName": "OmniKernel",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Foundation.Data?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Data",
-                        "printedName": "Foundation.Data",
-                        "usr": "s:10Foundation4DataV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10OmniKernel12HttpResponseV4data10Foundation4DataVSgvg",
-                "mangledName": "$s10OmniKernel12HttpResponseV4data10Foundation4DataVSgvg",
+                "usr": "s:10OmniKernel0A8ResponseV10statusCodeSivg",
+                "mangledName": "$s10OmniKernel0A8ResponseV10statusCodeSivg",
                 "moduleName": "OmniKernel",
                 "implicit": true,
                 "accessorKind": "get"
@@ -136,12 +76,34 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OmniKernel12HttpResponseV20successfullyReceivedSbyF",
-            "mangledName": "$s10OmniKernel12HttpResponseV20successfullyReceivedSbyF",
+            "usr": "s:10OmniKernel0A8ResponseV20successfullyReceivedSbyF",
+            "mangledName": "$s10OmniKernel0A8ResponseV20successfullyReceivedSbyF",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "AccessControl"
             ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBodyAsString",
+            "printedName": "getBodyAsString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A8ResponseV15getBodyAsStringSSyKF",
+            "mangledName": "$s10OmniKernel0A8ResponseV15getBodyAsStringSSyKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -156,8 +118,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OmniKernel12HttpResponseV6decodexyKSeRzlF",
-            "mangledName": "$s10OmniKernel12HttpResponseV6decodexyKSeRzlF",
+            "usr": "s:10OmniKernel0A8ResponseV6decodexyKSeRzlF",
+            "mangledName": "$s10OmniKernel0A8ResponseV6decodexyKSeRzlF",
             "moduleName": "OmniKernel",
             "genericSig": "<τ_0_0 where τ_0_0 : Swift.Decodable>",
             "sugared_genericSig": "<T where T : Swift.Decodable>",
@@ -169,8 +131,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:10OmniKernel12HttpResponseV",
-        "mangledName": "$s10OmniKernel12HttpResponseV",
+        "usr": "s:10OmniKernel0A8ResponseV",
+        "mangledName": "$s10OmniKernel0A8ResponseV",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -188,8 +150,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpClient",
-        "printedName": "HttpClient",
+        "name": "OmniClient",
+        "printedName": "OmniClient",
         "children": [
           {
             "kind": "Constructor",
@@ -198,15 +160,15 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HttpClient",
-                "printedName": "OmniKernel.HttpClient",
-                "usr": "s:10OmniKernel10HttpClientV"
+                "name": "OmniClient",
+                "printedName": "OmniKernel.OmniClient",
+                "usr": "s:10OmniKernel0A6ClientV"
               },
               {
                 "kind": "TypeNominal",
-                "name": "HttpClientScheme",
-                "printedName": "OmniKernel.HttpClientScheme",
-                "usr": "s:10OmniKernel16HttpClientSchemeO"
+                "name": "OmniClientScheme",
+                "printedName": "OmniKernel.OmniClientScheme",
+                "usr": "s:10OmniKernel0A12ClientSchemeO"
               },
               {
                 "kind": "TypeNominal",
@@ -231,8 +193,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OmniKernel10HttpClientV6scheme4host11defaultPathAcA0cD6SchemeO_S2SSgtcfc",
-            "mangledName": "$s10OmniKernel10HttpClientV6scheme4host11defaultPathAcA0cD6SchemeO_S2SSgtcfc",
+            "usr": "s:10OmniKernel0A6ClientV6scheme4host11defaultPathAcA0aC6SchemeO_S2SSgtcfc",
+            "mangledName": "$s10OmniKernel0A6ClientV6scheme4host11defaultPathAcA0aC6SchemeO_S2SSgtcfc",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "AccessControl"
@@ -263,8 +225,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OmniKernel10HttpClientV24addDefaultQueryParameter3key5valueySS_SStF",
-            "mangledName": "$s10OmniKernel10HttpClientV24addDefaultQueryParameter3key5valueySS_SStF",
+            "usr": "s:10OmniKernel0A6ClientV24addDefaultQueryParameter3key5valueySS_SStF",
+            "mangledName": "$s10OmniKernel0A6ClientV24addDefaultQueryParameter3key5valueySS_SStF",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "Mutating",
@@ -274,58 +236,47 @@
           },
           {
             "kind": "Function",
-            "name": "postJson",
-            "printedName": "postJson(path:body:)",
+            "name": "addDefaultHeader",
+            "printedName": "addDefaultHeader(key:value:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HttpResponse",
-                "printedName": "OmniKernel.HttpResponse",
-                "usr": "s:10OmniKernel12HttpResponseV"
+                "name": "Void",
+                "printedName": "()"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
-                "name": "Encodable",
-                "printedName": "any Swift.Encodable",
-                "usr": "s:SE"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OmniKernel10HttpClientV8postJson4path4bodyAA0C8ResponseVSSSg_SE_ptYaKF",
-            "mangledName": "$s10OmniKernel10HttpClientV8postJson4path4bodyAA0C8ResponseVSSSg_SE_ptYaKF",
+            "usr": "s:10OmniKernel0A6ClientV16addDefaultHeader3key5valueySS_SStF",
+            "mangledName": "$s10OmniKernel0A6ClientV16addDefaultHeader3key5valueySS_SStF",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "Mutating",
               "AccessControl"
             ],
-            "throwing": true,
             "funcSelfKind": "Mutating"
           },
           {
             "kind": "Function",
-            "name": "getJson",
-            "printedName": "getJson(path:additionalQueryParameters:)",
+            "name": "get",
+            "printedName": "get(path:additionalQueryParameters:additionalHeaders:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "HttpResponse",
-                "printedName": "OmniKernel.HttpResponse",
-                "usr": "s:10OmniKernel12HttpResponseV"
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -362,11 +313,471 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10OmniKernel10HttpClientV7getJson4path25additionalQueryParametersAA0C8ResponseVSSSg_SDyS2SGtYaKF",
-            "mangledName": "$s10OmniKernel10HttpClientV7getJson4path25additionalQueryParametersAA0C8ResponseVSSSg_SDyS2SGtYaKF",
+            "usr": "s:10OmniKernel0A6ClientV3get4path25additionalQueryParameters0F7HeadersAA0A8ResponseVSSSg_SDyS2SGAKtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV3get4path25additionalQueryParameters0F7HeadersAA0A8ResponseVSSSg_SDyS2SGAKtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "post",
+            "printedName": "post(path:body:additionalQueryParameters:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6ClientV4post4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SSSDyS2SGALtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV4post4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SSSDyS2SGALtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "postJson",
+            "printedName": "postJson(path:body:additionalQueryParameters:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encodable",
+                "printedName": "any Swift.Encodable",
+                "usr": "s:SE"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6ClientV8postJson4path4body25additionalQueryParameters0H7HeadersAA0A8ResponseVSSSg_SE_pSDyS2SGALtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV8postJson4path4body25additionalQueryParameters0H7HeadersAA0A8ResponseVSSSg_SE_pSDyS2SGALtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "put",
+            "printedName": "put(path:body:additionalQueryParameters:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6ClientV3put4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SSSDyS2SGALtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV3put4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SSSDyS2SGALtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "putJson",
+            "printedName": "putJson(path:body:additionalQueryParameters:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encodable",
+                "printedName": "any Swift.Encodable",
+                "usr": "s:SE"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6ClientV7putJson4path4body25additionalQueryParameters0H7HeadersAA0A8ResponseVSSSg_SE_pSDyS2SGALtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV7putJson4path4body25additionalQueryParameters0H7HeadersAA0A8ResponseVSSSg_SE_pSDyS2SGALtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "Mutating",
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "Mutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(path:body:additionalQueryParameters:additionalHeaders:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniResponse",
+                "printedName": "OmniKernel.OmniResponse",
+                "usr": "s:10OmniKernel0A8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any Swift.Encodable)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encodable",
+                    "printedName": "any Swift.Encodable",
+                    "usr": "s:SE"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6ClientV6delete4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SE_pSgSDyS2SGAMtYaKF",
+            "mangledName": "$s10OmniKernel0A6ClientV6delete4path4body25additionalQueryParameters0G7HeadersAA0A8ResponseVSSSg_SE_pSgSDyS2SGAMtYaKF",
             "moduleName": "OmniKernel",
             "declAttributes": [
               "Mutating",
@@ -377,8 +788,8 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:10OmniKernel10HttpClientV",
-        "mangledName": "$s10OmniKernel10HttpClientV",
+        "usr": "s:10OmniKernel0A6ClientV",
+        "mangledName": "$s10OmniKernel0A6ClientV",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -396,8 +807,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpClientScheme",
-        "printedName": "HttpClientScheme",
+        "name": "OmniClientScheme",
+        "printedName": "OmniClientScheme",
         "children": [
           {
             "kind": "Var",
@@ -407,24 +818,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpClientScheme.Type) -> OmniKernel.HttpClientScheme",
+                "printedName": "(OmniKernel.OmniClientScheme.Type) -> OmniKernel.OmniClientScheme",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpClientScheme",
-                    "printedName": "OmniKernel.HttpClientScheme",
-                    "usr": "s:10OmniKernel16HttpClientSchemeO"
+                    "name": "OmniClientScheme",
+                    "printedName": "OmniKernel.OmniClientScheme",
+                    "usr": "s:10OmniKernel0A12ClientSchemeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpClientScheme.Type",
+                    "printedName": "OmniKernel.OmniClientScheme.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpClientScheme",
-                        "printedName": "OmniKernel.HttpClientScheme",
-                        "usr": "s:10OmniKernel16HttpClientSchemeO"
+                        "name": "OmniClientScheme",
+                        "printedName": "OmniKernel.OmniClientScheme",
+                        "usr": "s:10OmniKernel0A12ClientSchemeO"
                       }
                     ]
                   }
@@ -432,8 +843,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel16HttpClientSchemeO0C0yA2CmF",
-            "mangledName": "$s10OmniKernel16HttpClientSchemeO0C0yA2CmF",
+            "usr": "s:10OmniKernel0A12ClientSchemeO4HttpyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientSchemeO4HttpyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -444,24 +855,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpClientScheme.Type) -> OmniKernel.HttpClientScheme",
+                "printedName": "(OmniKernel.OmniClientScheme.Type) -> OmniKernel.OmniClientScheme",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpClientScheme",
-                    "printedName": "OmniKernel.HttpClientScheme",
-                    "usr": "s:10OmniKernel16HttpClientSchemeO"
+                    "name": "OmniClientScheme",
+                    "printedName": "OmniKernel.OmniClientScheme",
+                    "usr": "s:10OmniKernel0A12ClientSchemeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpClientScheme.Type",
+                    "printedName": "OmniKernel.OmniClientScheme.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpClientScheme",
-                        "printedName": "OmniKernel.HttpClientScheme",
-                        "usr": "s:10OmniKernel16HttpClientSchemeO"
+                        "name": "OmniClientScheme",
+                        "printedName": "OmniKernel.OmniClientScheme",
+                        "usr": "s:10OmniKernel0A12ClientSchemeO"
                       }
                     ]
                   }
@@ -469,8 +880,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel16HttpClientSchemeO5HttpsyA2CmF",
-            "mangledName": "$s10OmniKernel16HttpClientSchemeO5HttpsyA2CmF",
+            "usr": "s:10OmniKernel0A12ClientSchemeO5HttpsyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientSchemeO5HttpsyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -481,13 +892,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "OmniKernel.HttpClientScheme?",
+                "printedName": "OmniKernel.OmniClientScheme?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpClientScheme",
-                    "printedName": "OmniKernel.HttpClientScheme",
-                    "usr": "s:10OmniKernel16HttpClientSchemeO"
+                    "name": "OmniClientScheme",
+                    "printedName": "OmniKernel.OmniClientScheme",
+                    "usr": "s:10OmniKernel0A12ClientSchemeO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -500,8 +911,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OmniKernel16HttpClientSchemeO8rawValueACSgSS_tcfc",
-            "mangledName": "$s10OmniKernel16HttpClientSchemeO8rawValueACSgSS_tcfc",
+            "usr": "s:10OmniKernel0A12ClientSchemeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10OmniKernel0A12ClientSchemeO8rawValueACSgSS_tcfc",
             "moduleName": "OmniKernel",
             "implicit": true,
             "init_kind": "Designated"
@@ -519,8 +930,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OmniKernel16HttpClientSchemeO8rawValueSSvp",
-            "mangledName": "$s10OmniKernel16HttpClientSchemeO8rawValueSSvp",
+            "usr": "s:10OmniKernel0A12ClientSchemeO8rawValueSSvp",
+            "mangledName": "$s10OmniKernel0A12ClientSchemeO8rawValueSSvp",
             "moduleName": "OmniKernel",
             "implicit": true,
             "accessors": [
@@ -537,8 +948,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OmniKernel16HttpClientSchemeO8rawValueSSvg",
-                "mangledName": "$s10OmniKernel16HttpClientSchemeO8rawValueSSvg",
+                "usr": "s:10OmniKernel0A12ClientSchemeO8rawValueSSvg",
+                "mangledName": "$s10OmniKernel0A12ClientSchemeO8rawValueSSvg",
                 "moduleName": "OmniKernel",
                 "implicit": true,
                 "accessorKind": "get"
@@ -547,8 +958,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OmniKernel16HttpClientSchemeO",
-        "mangledName": "$s10OmniKernel16HttpClientSchemeO",
+        "usr": "s:10OmniKernel0A12ClientSchemeO",
+        "mangledName": "$s10OmniKernel0A12ClientSchemeO",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -605,8 +1016,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpResponseError",
-        "printedName": "HttpResponseError",
+        "name": "OmniResponseError",
+        "printedName": "OmniResponseError",
         "children": [
           {
             "kind": "Var",
@@ -616,24 +1027,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpResponseError.Type) -> OmniKernel.HttpResponseError",
+                "printedName": "(OmniKernel.OmniResponseError.Type) -> OmniKernel.OmniResponseError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpResponseError",
-                    "printedName": "OmniKernel.HttpResponseError",
-                    "usr": "s:10OmniKernel17HttpResponseErrorO"
+                    "name": "OmniResponseError",
+                    "printedName": "OmniKernel.OmniResponseError",
+                    "usr": "s:10OmniKernel0A13ResponseErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpResponseError.Type",
+                    "printedName": "OmniKernel.OmniResponseError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpResponseError",
-                        "printedName": "OmniKernel.HttpResponseError",
-                        "usr": "s:10OmniKernel17HttpResponseErrorO"
+                        "name": "OmniResponseError",
+                        "printedName": "OmniKernel.OmniResponseError",
+                        "usr": "s:10OmniKernel0A13ResponseErrorO"
                       }
                     ]
                   }
@@ -641,8 +1052,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel17HttpResponseErrorO011JSONDecoderE0yA2CmF",
-            "mangledName": "$s10OmniKernel17HttpResponseErrorO011JSONDecoderE0yA2CmF",
+            "usr": "s:10OmniKernel0A13ResponseErrorO011JSONDecoderD0yA2CmF",
+            "mangledName": "$s10OmniKernel0A13ResponseErrorO011JSONDecoderD0yA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -653,13 +1064,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "OmniKernel.HttpResponseError?",
+                "printedName": "OmniKernel.OmniResponseError?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpResponseError",
-                    "printedName": "OmniKernel.HttpResponseError",
-                    "usr": "s:10OmniKernel17HttpResponseErrorO"
+                    "name": "OmniResponseError",
+                    "printedName": "OmniKernel.OmniResponseError",
+                    "usr": "s:10OmniKernel0A13ResponseErrorO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -672,8 +1083,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OmniKernel17HttpResponseErrorO8rawValueACSgSS_tcfc",
-            "mangledName": "$s10OmniKernel17HttpResponseErrorO8rawValueACSgSS_tcfc",
+            "usr": "s:10OmniKernel0A13ResponseErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10OmniKernel0A13ResponseErrorO8rawValueACSgSS_tcfc",
             "moduleName": "OmniKernel",
             "implicit": true,
             "init_kind": "Designated"
@@ -691,8 +1102,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OmniKernel17HttpResponseErrorO8rawValueSSvp",
-            "mangledName": "$s10OmniKernel17HttpResponseErrorO8rawValueSSvp",
+            "usr": "s:10OmniKernel0A13ResponseErrorO8rawValueSSvp",
+            "mangledName": "$s10OmniKernel0A13ResponseErrorO8rawValueSSvp",
             "moduleName": "OmniKernel",
             "implicit": true,
             "accessors": [
@@ -709,8 +1120,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OmniKernel17HttpResponseErrorO8rawValueSSvg",
-                "mangledName": "$s10OmniKernel17HttpResponseErrorO8rawValueSSvg",
+                "usr": "s:10OmniKernel0A13ResponseErrorO8rawValueSSvg",
+                "mangledName": "$s10OmniKernel0A13ResponseErrorO8rawValueSSvg",
                 "moduleName": "OmniKernel",
                 "implicit": true,
                 "accessorKind": "get"
@@ -719,8 +1130,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OmniKernel17HttpResponseErrorO",
-        "mangledName": "$s10OmniKernel17HttpResponseErrorO",
+        "usr": "s:10OmniKernel0A13ResponseErrorO",
+        "mangledName": "$s10OmniKernel0A13ResponseErrorO",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -791,8 +1202,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpMethod",
-        "printedName": "HttpMethod",
+        "name": "OmniClientMethod",
+        "printedName": "OmniClientMethod",
         "children": [
           {
             "kind": "Var",
@@ -802,24 +1213,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpMethod.Type) -> OmniKernel.HttpMethod",
+                "printedName": "(OmniKernel.OmniClientMethod.Type) -> OmniKernel.OmniClientMethod",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpMethod",
-                    "printedName": "OmniKernel.HttpMethod",
-                    "usr": "s:10OmniKernel10HttpMethodO"
+                    "name": "OmniClientMethod",
+                    "printedName": "OmniKernel.OmniClientMethod",
+                    "usr": "s:10OmniKernel0A12ClientMethodO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpMethod.Type",
+                    "printedName": "OmniKernel.OmniClientMethod.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpMethod",
-                        "printedName": "OmniKernel.HttpMethod",
-                        "usr": "s:10OmniKernel10HttpMethodO"
+                        "name": "OmniClientMethod",
+                        "printedName": "OmniKernel.OmniClientMethod",
+                        "usr": "s:10OmniKernel0A12ClientMethodO"
                       }
                     ]
                   }
@@ -827,8 +1238,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel10HttpMethodO3GetyA2CmF",
-            "mangledName": "$s10OmniKernel10HttpMethodO3GetyA2CmF",
+            "usr": "s:10OmniKernel0A12ClientMethodO3GetyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO3GetyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -839,24 +1250,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpMethod.Type) -> OmniKernel.HttpMethod",
+                "printedName": "(OmniKernel.OmniClientMethod.Type) -> OmniKernel.OmniClientMethod",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpMethod",
-                    "printedName": "OmniKernel.HttpMethod",
-                    "usr": "s:10OmniKernel10HttpMethodO"
+                    "name": "OmniClientMethod",
+                    "printedName": "OmniKernel.OmniClientMethod",
+                    "usr": "s:10OmniKernel0A12ClientMethodO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpMethod.Type",
+                    "printedName": "OmniKernel.OmniClientMethod.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpMethod",
-                        "printedName": "OmniKernel.HttpMethod",
-                        "usr": "s:10OmniKernel10HttpMethodO"
+                        "name": "OmniClientMethod",
+                        "printedName": "OmniKernel.OmniClientMethod",
+                        "usr": "s:10OmniKernel0A12ClientMethodO"
                       }
                     ]
                   }
@@ -864,8 +1275,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel10HttpMethodO4PostyA2CmF",
-            "mangledName": "$s10OmniKernel10HttpMethodO4PostyA2CmF",
+            "usr": "s:10OmniKernel0A12ClientMethodO4PostyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO4PostyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -876,24 +1287,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpMethod.Type) -> OmniKernel.HttpMethod",
+                "printedName": "(OmniKernel.OmniClientMethod.Type) -> OmniKernel.OmniClientMethod",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpMethod",
-                    "printedName": "OmniKernel.HttpMethod",
-                    "usr": "s:10OmniKernel10HttpMethodO"
+                    "name": "OmniClientMethod",
+                    "printedName": "OmniKernel.OmniClientMethod",
+                    "usr": "s:10OmniKernel0A12ClientMethodO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpMethod.Type",
+                    "printedName": "OmniKernel.OmniClientMethod.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpMethod",
-                        "printedName": "OmniKernel.HttpMethod",
-                        "usr": "s:10OmniKernel10HttpMethodO"
+                        "name": "OmniClientMethod",
+                        "printedName": "OmniKernel.OmniClientMethod",
+                        "usr": "s:10OmniKernel0A12ClientMethodO"
                       }
                     ]
                   }
@@ -901,8 +1312,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel10HttpMethodO3PutyA2CmF",
-            "mangledName": "$s10OmniKernel10HttpMethodO3PutyA2CmF",
+            "usr": "s:10OmniKernel0A12ClientMethodO3PutyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO3PutyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -913,24 +1324,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpMethod.Type) -> OmniKernel.HttpMethod",
+                "printedName": "(OmniKernel.OmniClientMethod.Type) -> OmniKernel.OmniClientMethod",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpMethod",
-                    "printedName": "OmniKernel.HttpMethod",
-                    "usr": "s:10OmniKernel10HttpMethodO"
+                    "name": "OmniClientMethod",
+                    "printedName": "OmniKernel.OmniClientMethod",
+                    "usr": "s:10OmniKernel0A12ClientMethodO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpMethod.Type",
+                    "printedName": "OmniKernel.OmniClientMethod.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpMethod",
-                        "printedName": "OmniKernel.HttpMethod",
-                        "usr": "s:10OmniKernel10HttpMethodO"
+                        "name": "OmniClientMethod",
+                        "printedName": "OmniKernel.OmniClientMethod",
+                        "usr": "s:10OmniKernel0A12ClientMethodO"
                       }
                     ]
                   }
@@ -938,8 +1349,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel10HttpMethodO6DeleteyA2CmF",
-            "mangledName": "$s10OmniKernel10HttpMethodO6DeleteyA2CmF",
+            "usr": "s:10OmniKernel0A12ClientMethodO6DeleteyA2CmF",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO6DeleteyA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -950,13 +1361,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "OmniKernel.HttpMethod?",
+                "printedName": "OmniKernel.OmniClientMethod?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpMethod",
-                    "printedName": "OmniKernel.HttpMethod",
-                    "usr": "s:10OmniKernel10HttpMethodO"
+                    "name": "OmniClientMethod",
+                    "printedName": "OmniKernel.OmniClientMethod",
+                    "usr": "s:10OmniKernel0A12ClientMethodO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -969,8 +1380,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OmniKernel10HttpMethodO8rawValueACSgSS_tcfc",
-            "mangledName": "$s10OmniKernel10HttpMethodO8rawValueACSgSS_tcfc",
+            "usr": "s:10OmniKernel0A12ClientMethodO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO8rawValueACSgSS_tcfc",
             "moduleName": "OmniKernel",
             "implicit": true,
             "init_kind": "Designated"
@@ -988,8 +1399,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OmniKernel10HttpMethodO8rawValueSSvp",
-            "mangledName": "$s10OmniKernel10HttpMethodO8rawValueSSvp",
+            "usr": "s:10OmniKernel0A12ClientMethodO8rawValueSSvp",
+            "mangledName": "$s10OmniKernel0A12ClientMethodO8rawValueSSvp",
             "moduleName": "OmniKernel",
             "implicit": true,
             "accessors": [
@@ -1006,8 +1417,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OmniKernel10HttpMethodO8rawValueSSvg",
-                "mangledName": "$s10OmniKernel10HttpMethodO8rawValueSSvg",
+                "usr": "s:10OmniKernel0A12ClientMethodO8rawValueSSvg",
+                "mangledName": "$s10OmniKernel0A12ClientMethodO8rawValueSSvg",
                 "moduleName": "OmniKernel",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1016,8 +1427,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OmniKernel10HttpMethodO",
-        "mangledName": "$s10OmniKernel10HttpMethodO",
+        "usr": "s:10OmniKernel0A12ClientMethodO",
+        "mangledName": "$s10OmniKernel0A12ClientMethodO",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -1074,8 +1485,180 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "HttpClientError",
-        "printedName": "HttpClientError",
+        "name": "OmniResult",
+        "printedName": "OmniResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error> (OmniKernel.OmniResult<τ_0_0, τ_0_1>.Type) -> (τ_0_0) -> OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_0) -> OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniResult",
+                        "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:10OmniKernel0A6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniResult",
+                        "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:10OmniKernel0A6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A6ResultO7successyACyxq_GxcAEms5ErrorR_r0_lF",
+            "mangledName": "$s10OmniKernel0A6ResultO7successyACyxq_GxcAEms5ErrorR_r0_lF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "failure",
+            "printedName": "failure",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "GenericFunction",
+                "printedName": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error> (OmniKernel.OmniResult<τ_0_0, τ_0_1>.Type) -> (τ_0_1) -> OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(τ_0_1) -> OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniResult",
+                        "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:10OmniKernel0A6ResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniResult",
+                        "printedName": "OmniKernel.OmniResult<τ_0_0, τ_0_1>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:10OmniKernel0A6ResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A6ResultO7failureyACyxq_Gq_cAEms5ErrorR_r0_lF",
+            "mangledName": "$s10OmniKernel0A6ResultO7failureyACyxq_Gq_cAEms5ErrorR_r0_lF",
+            "moduleName": "OmniKernel"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10OmniKernel0A6ResultO",
+        "mangledName": "$s10OmniKernel0A6ResultO",
+        "moduleName": "OmniKernel",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_1 : Swift.Error>",
+        "sugared_genericSig": "<Success, Failure where Failure : Swift.Error>",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniClientError",
+        "printedName": "OmniClientError",
         "children": [
           {
             "kind": "Var",
@@ -1085,24 +1668,24 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(OmniKernel.HttpClientError.Type) -> OmniKernel.HttpClientError",
+                "printedName": "(OmniKernel.OmniClientError.Type) -> OmniKernel.OmniClientError",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpClientError",
-                    "printedName": "OmniKernel.HttpClientError",
-                    "usr": "s:10OmniKernel15HttpClientErrorO"
+                    "name": "OmniClientError",
+                    "printedName": "OmniKernel.OmniClientError",
+                    "usr": "s:10OmniKernel0A11ClientErrorO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "OmniKernel.HttpClientError.Type",
+                    "printedName": "OmniKernel.OmniClientError.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "HttpClientError",
-                        "printedName": "OmniKernel.HttpClientError",
-                        "usr": "s:10OmniKernel15HttpClientErrorO"
+                        "name": "OmniClientError",
+                        "printedName": "OmniKernel.OmniClientError",
+                        "usr": "s:10OmniKernel0A11ClientErrorO"
                       }
                     ]
                   }
@@ -1110,8 +1693,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10OmniKernel15HttpClientErrorO010URLEncodedE0yA2CmF",
-            "mangledName": "$s10OmniKernel15HttpClientErrorO010URLEncodedE0yA2CmF",
+            "usr": "s:10OmniKernel0A11ClientErrorO010URLEncodedD0yA2CmF",
+            "mangledName": "$s10OmniKernel0A11ClientErrorO010URLEncodedD0yA2CmF",
             "moduleName": "OmniKernel"
           },
           {
@@ -1122,13 +1705,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "OmniKernel.HttpClientError?",
+                "printedName": "OmniKernel.OmniClientError?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "HttpClientError",
-                    "printedName": "OmniKernel.HttpClientError",
-                    "usr": "s:10OmniKernel15HttpClientErrorO"
+                    "name": "OmniClientError",
+                    "printedName": "OmniKernel.OmniClientError",
+                    "usr": "s:10OmniKernel0A11ClientErrorO"
                   }
                 ],
                 "usr": "s:Sq"
@@ -1141,8 +1724,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:10OmniKernel15HttpClientErrorO8rawValueACSgSS_tcfc",
-            "mangledName": "$s10OmniKernel15HttpClientErrorO8rawValueACSgSS_tcfc",
+            "usr": "s:10OmniKernel0A11ClientErrorO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10OmniKernel0A11ClientErrorO8rawValueACSgSS_tcfc",
             "moduleName": "OmniKernel",
             "implicit": true,
             "init_kind": "Designated"
@@ -1160,8 +1743,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:10OmniKernel15HttpClientErrorO8rawValueSSvp",
-            "mangledName": "$s10OmniKernel15HttpClientErrorO8rawValueSSvp",
+            "usr": "s:10OmniKernel0A11ClientErrorO8rawValueSSvp",
+            "mangledName": "$s10OmniKernel0A11ClientErrorO8rawValueSSvp",
             "moduleName": "OmniKernel",
             "implicit": true,
             "accessors": [
@@ -1178,8 +1761,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:10OmniKernel15HttpClientErrorO8rawValueSSvg",
-                "mangledName": "$s10OmniKernel15HttpClientErrorO8rawValueSSvg",
+                "usr": "s:10OmniKernel0A11ClientErrorO8rawValueSSvg",
+                "mangledName": "$s10OmniKernel0A11ClientErrorO8rawValueSSvg",
                 "moduleName": "OmniKernel",
                 "implicit": true,
                 "accessorKind": "get"
@@ -1188,8 +1771,8 @@
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10OmniKernel15HttpClientErrorO",
-        "mangledName": "$s10OmniKernel15HttpClientErrorO",
+        "usr": "s:10OmniKernel0A11ClientErrorO",
+        "mangledName": "$s10OmniKernel0A11ClientErrorO",
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
@@ -1253,133 +1836,224 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClient.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
       "kind": "Dictionary",
-      "offset": 263,
+      "offset": 307,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClient.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
       "kind": "Dictionary",
-      "offset": 328,
+      "offset": 372,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClient.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
       "kind": "Dictionary",
-      "offset": 1476,
+      "offset": 1029,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientScheme.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 1081,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 1657,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 1709,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 2352,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 2404,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 3044,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 3096,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 3737,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 3789,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 4442,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 4494,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 5140,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
+      "kind": "Dictionary",
+      "offset": 5713,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
       "kind": "StringLiteral",
       "offset": 167,
       "length": 6,
       "value": "\"http\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientScheme.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientScheme.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
       "kind": "StringLiteral",
       "offset": 167,
       "length": 6,
       "value": "\"http\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientScheme.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
       "kind": "StringLiteral",
       "offset": 191,
       "length": 7,
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpResponseError.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniResponseError.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 19,
       "value": "\"No data available\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpResponseError.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniResponseError.swift",
       "kind": "StringLiteral",
       "offset": 203,
       "length": 19,
       "value": "\"No data available\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 153,
+      "offset": 159,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 175,
+      "offset": 181,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 197,
+      "offset": 203,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 221,
+      "offset": 227,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 153,
+      "offset": 159,
       "length": 5,
       "value": "\"GET\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 175,
+      "offset": 181,
       "length": 6,
       "value": "\"POST\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 197,
+      "offset": 203,
       "length": 5,
       "value": "\"PUT\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpMethod.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
       "kind": "StringLiteral",
-      "offset": 221,
+      "offset": 227,
       "length": 8,
       "value": "\"DELETE\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientError.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientError.swift",
       "kind": "StringLiteral",
       "offset": 183,
       "length": 28,
       "value": "\"Cannot parse String to URL\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/HttpClientError.swift",
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientError.swift",
       "kind": "StringLiteral",
       "offset": 183,
       "length": 28,
