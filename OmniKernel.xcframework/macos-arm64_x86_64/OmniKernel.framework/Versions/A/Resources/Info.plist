@@ -6,6 +6,8 @@
 	<string>23G93</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>OmniKernel</string>
 	<key>CFBundleExecutable</key>
 	<string>OmniKernel</string>
 	<key>CFBundleIdentifier</key>
