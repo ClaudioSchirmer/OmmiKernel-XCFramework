@@ -7,6 +7,18 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public struct OmniStore {
+  public func put(key: Swift.String, value: Swift.String)
+  public func put(key: Swift.String, value: Swift.Bool)
+  public func put(key: Swift.String, value: [Swift.String])
+  public func put(key: Swift.String, value: Swift.Int)
+  public func put(key: Swift.String, value: Swift.Float)
+  public func get(key: Swift.String, defaultValue: Swift.String) -> Swift.String
+  public func get(key: Swift.String) -> Swift.Bool
+  public func get(key: Swift.String, defaultValue: [Swift.String]) -> [Swift.String]
+  public func get(key: Swift.String, defaultValue: Swift.Int) -> Swift.Int
+  public func get(key: Swift.String, defaultValue: Swift.Float) -> Swift.Float
+}
 public struct OmniResponse {
   public let statusCode: Swift.Int
   public func successfullyReceived() -> Swift.Bool
