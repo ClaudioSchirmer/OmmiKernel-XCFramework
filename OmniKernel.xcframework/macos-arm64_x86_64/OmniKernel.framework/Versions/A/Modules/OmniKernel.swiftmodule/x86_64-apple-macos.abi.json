@@ -3352,6 +3352,7 @@
             "usr": "s:10OmniKernel0A6SQLiteC12setupQueriesSaySSGyF",
             "mangledName": "$s10OmniKernel0A6SQLiteC12setupQueriesSaySSGyF",
             "moduleName": "OmniKernel",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3395,6 +3396,7 @@
             "usr": "s:10OmniKernel0A6SQLiteC14upgradeQueriesSDys5Int32VSaySSGGyF",
             "mangledName": "$s10OmniKernel0A6SQLiteC14upgradeQueriesSDys5Int32VSaySSGGyF",
             "moduleName": "OmniKernel",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3438,6 +3440,7 @@
             "usr": "s:10OmniKernel0A6SQLiteC16downgradeQueriesSDys5Int32VSaySSGGyF",
             "mangledName": "$s10OmniKernel0A6SQLiteC16downgradeQueriesSDys5Int32VSaySSGGyF",
             "moduleName": "OmniKernel",
+            "isOpen": true,
             "declAttributes": [
               "AccessControl"
             ],
@@ -3752,6 +3755,7 @@
         "usr": "s:10OmniKernel0A6SQLiteC",
         "mangledName": "$s10OmniKernel0A6SQLiteC",
         "moduleName": "OmniKernel",
+        "isOpen": true,
         "declAttributes": [
           "AccessControl"
         ],
@@ -5350,7 +5354,7 @@
     {
       "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/OmniSQLite.swift",
       "kind": "BooleanLiteral",
-      "offset": 519,
+      "offset": 517,
       "length": 5,
       "value": "false"
     },

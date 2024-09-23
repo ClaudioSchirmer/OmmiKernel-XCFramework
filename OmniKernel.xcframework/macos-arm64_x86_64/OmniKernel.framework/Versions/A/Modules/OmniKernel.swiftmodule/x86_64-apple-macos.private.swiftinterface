@@ -120,7 +120,7 @@ extension OmniKernel.OmniSQLColumnDouble {
   public func max() -> any OmniKernel.OmniSQLColumnDouble
   public func avg() -> any OmniKernel.OmniSQLColumnDouble
 }
-@_hasMissingDesignatedInitializers public class OmniSQLite {
+@_hasMissingDesignatedInitializers open class OmniSQLite {
   open func setupQueries() -> [Swift.String]
   open func upgradeQueries() -> [Swift.Int32 : [Swift.String]]
   open func downgradeQueries() -> [Swift.Int32 : [Swift.String]]
