@@ -136,6 +136,8 @@ open class OmniSQLite {
   @objc deinit
 }
 public struct OmniSQLFilterExpression {
+  public static func || (lhs: OmniKernel.OmniSQLFilterExpression, rhs: OmniKernel.OmniSQLFilterExpression) -> OmniKernel.OmniSQLFilterExpression
+  public static func && (lhs: OmniKernel.OmniSQLFilterExpression, rhs: OmniKernel.OmniSQLFilterExpression) -> OmniKernel.OmniSQLFilterExpression
 }
 public enum OmniClientMethod : Swift.String {
   case Get

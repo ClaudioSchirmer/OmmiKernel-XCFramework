@@ -3824,6 +3824,76 @@
         "kind": "TypeDecl",
         "name": "OmniSQLFilterExpression",
         "printedName": "OmniSQLFilterExpression",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "||",
+            "printedName": "||(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A19SQLFilterExpressionV2oooiyA2C_ACtFZ",
+            "mangledName": "$s10OmniKernel0A19SQLFilterExpressionV2oooiyA2C_ACtFZ",
+            "moduleName": "OmniKernel",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "&&",
+            "printedName": "&&(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A19SQLFilterExpressionV2aaoiyA2C_ACtFZ",
+            "mangledName": "$s10OmniKernel0A19SQLFilterExpressionV2aaoiyA2C_ACtFZ",
+            "moduleName": "OmniKernel",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
         "declKind": "Struct",
         "usr": "s:10OmniKernel0A19SQLFilterExpressionV",
         "mangledName": "$s10OmniKernel0A19SQLFilterExpressionV",
