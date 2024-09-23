@@ -3447,6 +3447,40 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dbName:dbVersion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLite",
+                "printedName": "OmniKernel.OmniSQLite",
+                "usr": "s:10OmniKernel0A6SQLiteC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OmniKernel0A6SQLiteC6dbName0D7VersionACSS_s5Int32VtKcfc",
+            "mangledName": "$s10OmniKernel0A6SQLiteC6dbName0D7VersionACSS_s5Int32VtKcfc",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "query",
             "printedName": "query(sqlBuilder:)",
@@ -3759,7 +3793,6 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true,
         "conformances": [
           {
             "kind": "Conformance",
