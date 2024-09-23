@@ -1,12 +1,20 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
 // swift-module-flags: -target x86_64-apple-macos13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name OmniKernel
 import Foundation
 @_exported import OmniKernel
+import SQLite3
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum OmniSQLError : Swift.Error {
+  case error(Swift.String)
+  case errorOnQuery(Swift.String)
+  case errorOnUpdate(Swift.String)
+  case errorOnInsert(Swift.String)
+  case errorOnDelete(Swift.String)
+}
 public struct OmniStore {
   public func put(key: Swift.String, value: Swift.String)
   public func put(key: Swift.String, value: Swift.Bool)
@@ -25,28 +33,26 @@ public struct OmniResponse {
   public func getBodyAsString() throws -> Swift.String
   public func decode<T>() throws -> T where T : Swift.Decodable
 }
+public protocol OmniSQLColumn {
+  associatedtype ValueType
+  var columnName: Swift.String { get }
+}
+public protocol OmniSQLColumnInt64 : OmniKernel.OmniSQLColumn where Self.ValueType == Swift.Int64 {
+}
+public protocol OmniSQLColumnString : OmniKernel.OmniSQLColumn where Self.ValueType == Swift.String {
+}
+public protocol OmniSQLColumnDouble : OmniKernel.OmniSQLColumn where Self.ValueType == Swift.Double {
+}
 public struct OmniClient {
   public init(scheme: OmniKernel.OmniClientScheme, host: Swift.String, defaultPath: Swift.String? = nil)
   public mutating func addDefaultQueryParameter(key: Swift.String, value: Swift.String)
   public mutating func addDefaultHeader(key: Swift.String, value: Swift.String)
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func get(path: Swift.String? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func post(path: Swift.String? = nil, body: Swift.String, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func postJson(path: Swift.String? = nil, body: any Swift.Encodable, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func put(path: Swift.String? = nil, body: Swift.String, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func putJson(path: Swift.String? = nil, body: any Swift.Encodable, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   public mutating func delete(path: Swift.String? = nil, body: (any Swift.Encodable)? = nil, additionalQueryParameters: [Swift.String : Swift.String] = [:], additionalHeaders: [Swift.String : Swift.String] = [:]) async throws -> OmniKernel.OmniResponse
-  #endif
 }
 public enum OmniClientScheme : Swift.String {
   case Http
@@ -57,6 +63,21 @@ public enum OmniClientScheme : Swift.String {
     get
   }
 }
+public enum OmniSQLOrderBy : Swift.String {
+  case ASC
+  case DESC
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class OmniSQLResultRow {
+  public subscript<T>(column: T) -> T.ValueType? where T : OmniKernel.OmniSQLColumn {
+    get
+  }
+  @objc deinit
+}
 public enum OmniResponseError : Swift.String, Swift.Error {
   case JSONDecoderError
   public init?(rawValue: Swift.String)
@@ -64,6 +85,56 @@ public enum OmniResponseError : Swift.String, Swift.Error {
   public var rawValue: Swift.String {
     get
   }
+}
+public protocol OmniSQLTable {
+  static var tableName: Swift.String { get }
+}
+extension OmniKernel.OmniSQLTable {
+  public static func select(_ columns: any OmniKernel.OmniSQLColumn...) -> OmniKernel.OmniSQLSelectBuilder
+  public static func textColumn(columnName: Swift.String) -> any OmniKernel.OmniSQLColumnString
+  public static func integerColumn(columnName: Swift.String) -> any OmniKernel.OmniSQLColumnInt64
+  public static func realColumn(columnName: Swift.String) -> any OmniKernel.OmniSQLColumnDouble
+}
+extension OmniKernel.OmniSQLColumn {
+  public func isNotNull() -> OmniKernel.OmniSQLFilterExpression
+  public func isNull() -> OmniKernel.OmniSQLFilterExpression
+  public func eq(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func neq(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func gt(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func lt(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func gte(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func lte(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func like(_ value: Self.ValueType?) -> OmniKernel.OmniSQLFilterExpression
+  public func `in`(_ values: Self.ValueType...) -> OmniKernel.OmniSQLFilterExpression
+  public func count() -> any OmniKernel.OmniSQLColumnInt64
+}
+extension OmniKernel.OmniSQLColumnInt64 {
+  public func sum() -> any OmniKernel.OmniSQLColumnInt64
+  public func min() -> any OmniKernel.OmniSQLColumnInt64
+  public func max() -> any OmniKernel.OmniSQLColumnInt64
+  public func avg() -> any OmniKernel.OmniSQLColumnDouble
+}
+extension OmniKernel.OmniSQLColumnDouble {
+  public func sum() -> any OmniKernel.OmniSQLColumnDouble
+  public func min() -> any OmniKernel.OmniSQLColumnDouble
+  public func max() -> any OmniKernel.OmniSQLColumnDouble
+  public func avg() -> any OmniKernel.OmniSQLColumnDouble
+}
+@_hasMissingDesignatedInitializers public class OmniSQLite {
+  open func setupQueries() -> [Swift.String]
+  open func upgradeQueries() -> [Swift.Int32 : [Swift.String]]
+  open func downgradeQueries() -> [Swift.Int32 : [Swift.String]]
+  public func query(sqlBuilder: @escaping () -> OmniKernel.OmniSQLSelectBuilder) async throws -> [OmniKernel.OmniSQLResultRow]
+  @discardableResult
+  public func insert(_ table: any OmniKernel.OmniSQLTable.Type, columns: @escaping (OmniKernel.OmniSQLStatementBuilder) -> ()) async throws -> Swift.Int64
+  public func update(_ table: any OmniKernel.OmniSQLTable.Type, _ filterExpression: (() -> OmniKernel.OmniSQLFilterExpression)? = nil, columns: @escaping (OmniKernel.OmniSQLStatementBuilder) -> ()) async throws
+  public func delete(_ table: any OmniKernel.OmniSQLTable.Type, _ filterExpression: (() -> OmniKernel.OmniSQLFilterExpression)? = nil) async throws
+  public func close()
+  public func deleteDatabase() async
+  public static func close()
+  @objc deinit
+}
+public struct OmniSQLFilterExpression {
 }
 public enum OmniClientMethod : Swift.String {
   case Get
@@ -88,9 +159,42 @@ public enum OmniClientError : Swift.String, Swift.Error {
     get
   }
 }
+@_hasMissingDesignatedInitializers public class OmniSQLStatementBuilder {
+  public subscript<T>(column: T) -> T.ValueType? where T : OmniKernel.OmniSQLColumn {
+    get
+    set
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class OmniSQLSelectBuilder {
+  @discardableResult
+  public func `where`(_ filterExpression: () -> OmniKernel.OmniSQLFilterExpression) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func order(_ column: any OmniKernel.OmniSQLColumn, type: OmniKernel.OmniSQLOrderBy) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func groupBy(_ columns: any OmniKernel.OmniSQLColumn...) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func having(_ filterExpression: () -> OmniKernel.OmniSQLFilterExpression) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func limit(_ limit: Swift.Int) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func offset(_ offset: Swift.Int) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func innerJoin(_ table: any OmniKernel.OmniSQLTable.Type, on: any OmniKernel.OmniSQLColumn, equal: any OmniKernel.OmniSQLColumn) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func leftJoin(_ table: any OmniKernel.OmniSQLTable.Type, on: any OmniKernel.OmniSQLColumn, equal: any OmniKernel.OmniSQLColumn) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func rightJoin(_ table: any OmniKernel.OmniSQLTable.Type, on: any OmniKernel.OmniSQLColumn, equal: any OmniKernel.OmniSQLColumn) -> OmniKernel.OmniSQLSelectBuilder
+  @discardableResult
+  public func crossJoin(_ table: any OmniKernel.OmniSQLTable.Type) -> OmniKernel.OmniSQLSelectBuilder
+  @objc deinit
+}
 extension OmniKernel.OmniClientScheme : Swift.Equatable {}
 extension OmniKernel.OmniClientScheme : Swift.Hashable {}
 extension OmniKernel.OmniClientScheme : Swift.RawRepresentable {}
+extension OmniKernel.OmniSQLOrderBy : Swift.Equatable {}
+extension OmniKernel.OmniSQLOrderBy : Swift.Hashable {}
+extension OmniKernel.OmniSQLOrderBy : Swift.RawRepresentable {}
 extension OmniKernel.OmniResponseError : Swift.Equatable {}
 extension OmniKernel.OmniResponseError : Swift.Hashable {}
 extension OmniKernel.OmniResponseError : Swift.RawRepresentable {}

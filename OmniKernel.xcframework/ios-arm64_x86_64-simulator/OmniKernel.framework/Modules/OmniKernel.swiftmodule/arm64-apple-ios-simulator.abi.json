@@ -1,9 +1,304 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "OmniKernel",
+    "printedName": "OmniKernel",
     "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLError",
+        "printedName": "OmniSQLError",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLError.Type) -> (Swift.String) -> OmniKernel.OmniSQLError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OmniKernel.OmniSQLError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A8SQLErrorO5erroryACSScACmF",
+            "mangledName": "$s10OmniKernel0A8SQLErrorO5erroryACSScACmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "errorOnQuery",
+            "printedName": "errorOnQuery",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLError.Type) -> (Swift.String) -> OmniKernel.OmniSQLError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OmniKernel.OmniSQLError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A8SQLErrorO12errorOnQueryyACSScACmF",
+            "mangledName": "$s10OmniKernel0A8SQLErrorO12errorOnQueryyACSScACmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "errorOnUpdate",
+            "printedName": "errorOnUpdate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLError.Type) -> (Swift.String) -> OmniKernel.OmniSQLError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OmniKernel.OmniSQLError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A8SQLErrorO13errorOnUpdateyACSScACmF",
+            "mangledName": "$s10OmniKernel0A8SQLErrorO13errorOnUpdateyACSScACmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "errorOnInsert",
+            "printedName": "errorOnInsert",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLError.Type) -> (Swift.String) -> OmniKernel.OmniSQLError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OmniKernel.OmniSQLError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A8SQLErrorO13errorOnInsertyACSScACmF",
+            "mangledName": "$s10OmniKernel0A8SQLErrorO13errorOnInsertyACSScACmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "errorOnDelete",
+            "printedName": "errorOnDelete",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLError.Type) -> (Swift.String) -> OmniKernel.OmniSQLError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> OmniKernel.OmniSQLError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLError",
+                        "printedName": "OmniKernel.OmniSQLError",
+                        "usr": "s:10OmniKernel0A8SQLErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A8SQLErrorO13errorOnDeleteyACSScACmF",
+            "mangledName": "$s10OmniKernel0A8SQLErrorO13errorOnDeleteyACSScACmF",
+            "moduleName": "OmniKernel"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10OmniKernel0A8SQLErrorO",
+        "mangledName": "$s10OmniKernel0A8SQLErrorO",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Error",
+            "printedName": "Error",
+            "usr": "s:s5ErrorP",
+            "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
       {
         "kind": "Import",
         "name": "Foundation",
@@ -371,6 +666,62 @@
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -505,6 +856,790 @@
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLColumn",
+        "printedName": "OmniSQLColumn",
+        "children": [
+          {
+            "kind": "AssociatedType",
+            "name": "ValueType",
+            "printedName": "ValueType",
+            "declKind": "AssociatedType",
+            "usr": "s:10OmniKernel0A9SQLColumnP9ValueTypeQa",
+            "mangledName": "$s10OmniKernel0A9SQLColumnP9ValueTypeQa",
+            "moduleName": "OmniKernel",
+            "protocolReq": true
+          },
+          {
+            "kind": "Var",
+            "name": "columnName",
+            "printedName": "columnName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OmniKernel0A9SQLColumnP10columnNameSSvp",
+            "mangledName": "$s10OmniKernel0A9SQLColumnP10columnNameSSvp",
+            "moduleName": "OmniKernel",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A9SQLColumnP10columnNameSSvg",
+                "mangledName": "$s10OmniKernel0A9SQLColumnP10columnNameSSvg",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+                "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "isNotNull",
+            "printedName": "isNotNull()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE9isNotNullAA0A19SQLFilterExpressionVyF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE9isNotNullAA0A19SQLFilterExpressionVyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isNull",
+            "printedName": "isNull()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE6isNullAA0A19SQLFilterExpressionVyF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE6isNullAA0A19SQLFilterExpressionVyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "eq",
+            "printedName": "eq(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE2eqyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE2eqyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "neq",
+            "printedName": "neq(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE3neqyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE3neqyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gt",
+            "printedName": "gt(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE2gtyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE2gtyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lt",
+            "printedName": "lt(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE2ltyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE2ltyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gte",
+            "printedName": "gte(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE3gteyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE3gteyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lte",
+            "printedName": "lte(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE3lteyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE3lteyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "like",
+            "printedName": "like(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE4likeyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE4likeyAA0A19SQLFilterExpressionV9ValueTypeQzSgF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "in",
+            "printedName": "in(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLFilterExpression",
+                "printedName": "OmniKernel.OmniSQLFilterExpression",
+                "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[τ_0_0.ValueType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE2inyAA0A19SQLFilterExpressionV9ValueTypeQzd_tF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE2inyAA0A19SQLFilterExpressionV9ValueTypeQzd_tF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "count",
+            "printedName": "count()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnInt64",
+                "printedName": "any OmniKernel.OmniSQLColumnInt64",
+                "usr": "s:10OmniKernel0A14SQLColumnInt64P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A9SQLColumnPAAE5countAA0aC5Int64_pyF",
+            "mangledName": "$s10OmniKernel0A9SQLColumnPAAE5countAA0aC5Int64_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OmniKernel0A9SQLColumnP",
+        "mangledName": "$s10OmniKernel0A9SQLColumnP",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLColumnInt64",
+        "printedName": "OmniSQLColumnInt64",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sum",
+            "printedName": "sum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnInt64",
+                "printedName": "any OmniKernel.OmniSQLColumnInt64",
+                "usr": "s:10OmniKernel0A14SQLColumnInt64P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A14SQLColumnInt64PAAE3sumAaB_pyF",
+            "mangledName": "$s10OmniKernel0A14SQLColumnInt64PAAE3sumAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnInt64>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnInt64>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "min",
+            "printedName": "min()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnInt64",
+                "printedName": "any OmniKernel.OmniSQLColumnInt64",
+                "usr": "s:10OmniKernel0A14SQLColumnInt64P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A14SQLColumnInt64PAAE3minAaB_pyF",
+            "mangledName": "$s10OmniKernel0A14SQLColumnInt64PAAE3minAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnInt64>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnInt64>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "max",
+            "printedName": "max()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnInt64",
+                "printedName": "any OmniKernel.OmniSQLColumnInt64",
+                "usr": "s:10OmniKernel0A14SQLColumnInt64P"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A14SQLColumnInt64PAAE3maxAaB_pyF",
+            "mangledName": "$s10OmniKernel0A14SQLColumnInt64PAAE3maxAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnInt64>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnInt64>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "avg",
+            "printedName": "avg()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A14SQLColumnInt64PAAE3avgAA0aC6Double_pyF",
+            "mangledName": "$s10OmniKernel0A14SQLColumnInt64PAAE3avgAA0aC6Double_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnInt64>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnInt64>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OmniKernel0A14SQLColumnInt64P",
+        "mangledName": "$s10OmniKernel0A14SQLColumnInt64P",
+        "moduleName": "OmniKernel",
+        "genericSig": "<τ_0_0 : OmniKernel.OmniSQLColumn, τ_0_0.ValueType == Swift.Int64>",
+        "sugared_genericSig": "<Self : OmniKernel.OmniSQLColumn, Self.ValueType == Swift.Int64>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OmniSQLColumn",
+            "printedName": "OmniSQLColumn",
+            "usr": "s:10OmniKernel0A9SQLColumnP",
+            "mangledName": "$s10OmniKernel0A9SQLColumnP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLColumnString",
+        "printedName": "OmniSQLColumnString",
+        "declKind": "Protocol",
+        "usr": "s:10OmniKernel0A15SQLColumnStringP",
+        "mangledName": "$s10OmniKernel0A15SQLColumnStringP",
+        "moduleName": "OmniKernel",
+        "genericSig": "<τ_0_0 : OmniKernel.OmniSQLColumn, τ_0_0.ValueType == Swift.String>",
+        "sugared_genericSig": "<Self : OmniKernel.OmniSQLColumn, Self.ValueType == Swift.String>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OmniSQLColumn",
+            "printedName": "OmniSQLColumn",
+            "usr": "s:10OmniKernel0A9SQLColumnP",
+            "mangledName": "$s10OmniKernel0A9SQLColumnP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLColumnDouble",
+        "printedName": "OmniSQLColumnDouble",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "sum",
+            "printedName": "sum()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A15SQLColumnDoublePAAE3sumAaB_pyF",
+            "mangledName": "$s10OmniKernel0A15SQLColumnDoublePAAE3sumAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnDouble>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnDouble>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "min",
+            "printedName": "min()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A15SQLColumnDoublePAAE3minAaB_pyF",
+            "mangledName": "$s10OmniKernel0A15SQLColumnDoublePAAE3minAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnDouble>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnDouble>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "max",
+            "printedName": "max()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A15SQLColumnDoublePAAE3maxAaB_pyF",
+            "mangledName": "$s10OmniKernel0A15SQLColumnDoublePAAE3maxAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnDouble>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnDouble>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "avg",
+            "printedName": "avg()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A15SQLColumnDoublePAAE3avgAaB_pyF",
+            "mangledName": "$s10OmniKernel0A15SQLColumnDoublePAAE3avgAaB_pyF",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumnDouble>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLColumnDouble>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OmniKernel0A15SQLColumnDoubleP",
+        "mangledName": "$s10OmniKernel0A15SQLColumnDoubleP",
+        "moduleName": "OmniKernel",
+        "genericSig": "<τ_0_0 : OmniKernel.OmniSQLColumn, τ_0_0.ValueType == Swift.Double>",
+        "sugared_genericSig": "<Self : OmniKernel.OmniSQLColumn, Self.ValueType == Swift.Double>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "OmniSQLColumn",
+            "printedName": "OmniSQLColumn",
+            "usr": "s:10OmniKernel0A9SQLColumnP",
+            "mangledName": "$s10OmniKernel0A9SQLColumnP"
+          }
         ]
       },
       {
@@ -1162,6 +2297,22 @@
         "moduleName": "OmniKernel",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -1337,6 +2488,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1370,6 +2535,338 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLOrderBy",
+        "printedName": "OmniSQLOrderBy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "ASC",
+            "printedName": "ASC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLOrderBy.Type) -> OmniKernel.OmniSQLOrderBy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLOrderBy",
+                    "printedName": "OmniKernel.OmniSQLOrderBy",
+                    "usr": "s:10OmniKernel0A10SQLOrderByO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLOrderBy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLOrderBy",
+                        "printedName": "OmniKernel.OmniSQLOrderBy",
+                        "usr": "s:10OmniKernel0A10SQLOrderByO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A10SQLOrderByO3ASCyA2CmF",
+            "mangledName": "$s10OmniKernel0A10SQLOrderByO3ASCyA2CmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Var",
+            "name": "DESC",
+            "printedName": "DESC",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLOrderBy.Type) -> OmniKernel.OmniSQLOrderBy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLOrderBy",
+                    "printedName": "OmniKernel.OmniSQLOrderBy",
+                    "usr": "s:10OmniKernel0A10SQLOrderByO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "OmniKernel.OmniSQLOrderBy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLOrderBy",
+                        "printedName": "OmniKernel.OmniSQLOrderBy",
+                        "usr": "s:10OmniKernel0A10SQLOrderByO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10OmniKernel0A10SQLOrderByO4DESCyA2CmF",
+            "mangledName": "$s10OmniKernel0A10SQLOrderByO4DESCyA2CmF",
+            "moduleName": "OmniKernel"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "OmniKernel.OmniSQLOrderBy?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLOrderBy",
+                    "printedName": "OmniKernel.OmniSQLOrderBy",
+                    "usr": "s:10OmniKernel0A10SQLOrderByO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10OmniKernel0A10SQLOrderByO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10OmniKernel0A10SQLOrderByO8rawValueACSgSS_tcfc",
+            "moduleName": "OmniKernel",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OmniKernel0A10SQLOrderByO8rawValueSSvp",
+            "mangledName": "$s10OmniKernel0A10SQLOrderByO8rawValueSSvp",
+            "moduleName": "OmniKernel",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A10SQLOrderByO8rawValueSSvg",
+                "mangledName": "$s10OmniKernel0A10SQLOrderByO8rawValueSSvg",
+                "moduleName": "OmniKernel",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10OmniKernel0A10SQLOrderByO",
+        "mangledName": "$s10OmniKernel0A10SQLOrderByO",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLResultRow",
+        "printedName": "OmniSQLResultRow",
+        "children": [
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:10OmniKernel0A12SQLResultRowCy9ValueTypeQzSgxcAA0A9SQLColumnRzluip",
+            "mangledName": "$s10OmniKernel0A12SQLResultRowCy9ValueTypeQzSgxcAA0A9SQLColumnRzluip",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.ValueType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.ValueType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A12SQLResultRowCy9ValueTypeQzSgxcAA0A9SQLColumnRzluig",
+                "mangledName": "$s10OmniKernel0A12SQLResultRowCy9ValueTypeQzSgxcAA0A9SQLColumnRzluig",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+                "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OmniKernel0A12SQLResultRowC",
+        "mangledName": "$s10OmniKernel0A12SQLResultRowC",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -1509,6 +3006,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1556,6 +3067,747 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLTable",
+        "printedName": "OmniSQLTable",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "tableName",
+            "printedName": "tableName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10OmniKernel0A8SQLTableP9tableNameSSvpZ",
+            "mangledName": "$s10OmniKernel0A8SQLTableP9tableNameSSvpZ",
+            "moduleName": "OmniKernel",
+            "static": true,
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A8SQLTableP9tableNameSSvgZ",
+                "mangledName": "$s10OmniKernel0A8SQLTableP9tableNameSSvgZ",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLTable>",
+                "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLTable>",
+                "static": true,
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "select",
+            "printedName": "select(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any OmniKernel.OmniSQLColumn]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLColumn",
+                    "printedName": "any OmniKernel.OmniSQLColumn",
+                    "usr": "s:10OmniKernel0A9SQLColumnP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A8SQLTablePAAE6selectyAA0A16SQLSelectBuilderCAA0A9SQLColumn_pd_tFZ",
+            "mangledName": "$s10OmniKernel0A8SQLTablePAAE6selectyAA0A16SQLSelectBuilderCAA0A9SQLColumn_pd_tFZ",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLTable>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLTable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "textColumn",
+            "printedName": "textColumn(columnName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnString",
+                "printedName": "any OmniKernel.OmniSQLColumnString",
+                "usr": "s:10OmniKernel0A15SQLColumnStringP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A8SQLTablePAAE10textColumn10columnNameAA0A15SQLColumnString_pSS_tFZ",
+            "mangledName": "$s10OmniKernel0A8SQLTablePAAE10textColumn10columnNameAA0A15SQLColumnString_pSS_tFZ",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLTable>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLTable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "integerColumn",
+            "printedName": "integerColumn(columnName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnInt64",
+                "printedName": "any OmniKernel.OmniSQLColumnInt64",
+                "usr": "s:10OmniKernel0A14SQLColumnInt64P"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A8SQLTablePAAE13integerColumn10columnNameAA0A14SQLColumnInt64_pSS_tFZ",
+            "mangledName": "$s10OmniKernel0A8SQLTablePAAE13integerColumn10columnNameAA0A14SQLColumnInt64_pSS_tFZ",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLTable>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLTable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "realColumn",
+            "printedName": "realColumn(columnName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumnDouble",
+                "printedName": "any OmniKernel.OmniSQLColumnDouble",
+                "usr": "s:10OmniKernel0A15SQLColumnDoubleP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A8SQLTablePAAE10realColumn10columnNameAA0A15SQLColumnDouble_pSS_tFZ",
+            "mangledName": "$s10OmniKernel0A8SQLTablePAAE10realColumn10columnNameAA0A15SQLColumnDouble_pSS_tFZ",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLTable>",
+            "sugared_genericSig": "<Self where Self : OmniKernel.OmniSQLTable>",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10OmniKernel0A8SQLTableP",
+        "mangledName": "$s10OmniKernel0A8SQLTableP",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "SQLite3",
+        "printedName": "SQLite3",
+        "declKind": "Import",
+        "moduleName": "OmniKernel"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLite",
+        "printedName": "OmniSQLite",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "setupQueries",
+            "printedName": "setupQueries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC12setupQueriesSaySSGyF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC12setupQueriesSaySSGyF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "upgradeQueries",
+            "printedName": "upgradeQueries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int32 : [Swift.String]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC14upgradeQueriesSDys5Int32VSaySSGGyF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC14upgradeQueriesSDys5Int32VSaySSGGyF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "downgradeQueries",
+            "printedName": "downgradeQueries()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.Int32 : [Swift.String]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC16downgradeQueriesSDys5Int32VSaySSGGyF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC16downgradeQueriesSDys5Int32VSaySSGGyF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "query",
+            "printedName": "query(sqlBuilder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[OmniKernel.OmniSQLResultRow]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLResultRow",
+                    "printedName": "OmniKernel.OmniSQLResultRow",
+                    "usr": "s:10OmniKernel0A12SQLResultRowC"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> OmniKernel.OmniSQLSelectBuilder",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLSelectBuilder",
+                    "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                    "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC5query10sqlBuilderSayAA0A12SQLResultRowCGAA0a9SQLSelectF0Cyc_tYaKF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC5query10sqlBuilderSayAA0A12SQLResultRowCGAA0a9SQLSelectF0Cyc_tYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "insert",
+            "printedName": "insert(_:columns:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int64",
+                "printedName": "Swift.Int64",
+                "usr": "s:s5Int64V"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLStatementBuilder) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLStatementBuilder",
+                    "printedName": "OmniKernel.OmniSQLStatementBuilder",
+                    "usr": "s:10OmniKernel0A19SQLStatementBuilderC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC6insert_7columnss5Int64VAA0A8SQLTable_pXp_yAA0A19SQLStatementBuilderCctYaKF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC6insert_7columnss5Int64VAA0A8SQLTable_pXp_yAA0A19SQLStatementBuilderCctYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(_:_:columns:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> OmniKernel.OmniSQLFilterExpression)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> OmniKernel.OmniSQLFilterExpression",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLFilterExpression",
+                        "printedName": "OmniKernel.OmniSQLFilterExpression",
+                        "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(OmniKernel.OmniSQLStatementBuilder) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLStatementBuilder",
+                    "printedName": "OmniKernel.OmniSQLStatementBuilder",
+                    "usr": "s:10OmniKernel0A19SQLStatementBuilderC"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC6update__7columnsyAA0A8SQLTable_pXp_AA0A19SQLFilterExpressionVycSgyAA0A19SQLStatementBuilderCctYaKF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC6update__7columnsyAA0A8SQLTable_pXp_AA0A19SQLFilterExpressionVycSgyAA0A19SQLStatementBuilderCctYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "delete",
+            "printedName": "delete(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(() -> OmniKernel.OmniSQLFilterExpression)?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "() -> OmniKernel.OmniSQLFilterExpression",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OmniSQLFilterExpression",
+                        "printedName": "OmniKernel.OmniSQLFilterExpression",
+                        "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      }
+                    ]
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC6deleteyyAA0A8SQLTable_pXp_AA0A19SQLFilterExpressionVycSgtYaKF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC6deleteyyAA0A8SQLTable_pXp_AA0A19SQLFilterExpressionVycSgtYaKF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC5closeyyF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC5closeyyF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteDatabase",
+            "printedName": "deleteDatabase()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC14deleteDatabaseyyYaF",
+            "mangledName": "$s10OmniKernel0A6SQLiteC14deleteDatabaseyyYaF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "close",
+            "printedName": "close()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A6SQLiteC5closeyyFZ",
+            "mangledName": "$s10OmniKernel0A6SQLiteC5closeyyFZ",
+            "moduleName": "OmniKernel",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OmniKernel0A6SQLiteC",
+        "mangledName": "$s10OmniKernel0A6SQLiteC",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLFilterExpression",
+        "printedName": "OmniSQLFilterExpression",
+        "declKind": "Struct",
+        "usr": "s:10OmniKernel0A19SQLFilterExpressionV",
+        "mangledName": "$s10OmniKernel0A19SQLFilterExpressionV",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -1806,6 +4058,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1840,6 +4106,16 @@
             "usr": "s:SY",
             "mangledName": "$sSY"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -2012,6 +4288,22 @@
         "sugared_genericSig": "<Success, Failure where Failure : Swift.Error>",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -2150,6 +4442,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2199,11 +4505,715 @@
             "mangledName": "$ss8SendableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLStatementBuilder",
+        "printedName": "OmniSQLStatementBuilder",
+        "children": [
+          {
+            "kind": "Subscript",
+            "name": "subscript",
+            "printedName": "subscript(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "τ_0_0.ValueType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DependentMember",
+                    "printedName": "τ_0_0.ValueType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Subscript",
+            "usr": "s:10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluip",
+            "mangledName": "$s10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluip",
+            "moduleName": "OmniKernel",
+            "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+            "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.ValueType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.ValueType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluig",
+                "mangledName": "$s10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluig",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+                "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "τ_0_0.ValueType?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DependentMember",
+                        "printedName": "τ_0_0.ValueType"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluis",
+                "mangledName": "$s10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluis",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+                "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluiM",
+                "mangledName": "$s10OmniKernel0A19SQLStatementBuilderCy9ValueTypeQzSgxcAA0A9SQLColumnRzluiM",
+                "moduleName": "OmniKernel",
+                "genericSig": "<τ_0_0 where τ_0_0 : OmniKernel.OmniSQLColumn>",
+                "sugared_genericSig": "<T where T : OmniKernel.OmniSQLColumn>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OmniKernel0A19SQLStatementBuilderC",
+        "mangledName": "$s10OmniKernel0A19SQLStatementBuilderC",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OmniSQLSelectBuilder",
+        "printedName": "OmniSQLSelectBuilder",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "where",
+            "printedName": "where(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> OmniKernel.OmniSQLFilterExpression",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLFilterExpression",
+                    "printedName": "OmniKernel.OmniSQLFilterExpression",
+                    "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC5whereyAcA0A19SQLFilterExpressionVyXEF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC5whereyAcA0A19SQLFilterExpressionVyXEF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "order",
+            "printedName": "order(_:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLOrderBy",
+                "printedName": "OmniKernel.OmniSQLOrderBy",
+                "usr": "s:10OmniKernel0A10SQLOrderByO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC5order_4typeAcA0A9SQLColumn_p_AA0A10SQLOrderByOtF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC5order_4typeAcA0A9SQLColumn_p_AA0A10SQLOrderByOtF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "groupBy",
+            "printedName": "groupBy(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any OmniKernel.OmniSQLColumn]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLColumn",
+                    "printedName": "any OmniKernel.OmniSQLColumn",
+                    "usr": "s:10OmniKernel0A9SQLColumnP"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC7groupByyAcA0A9SQLColumn_pd_tF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC7groupByyAcA0A9SQLColumn_pd_tF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "having",
+            "printedName": "having(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> OmniKernel.OmniSQLFilterExpression",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLFilterExpression",
+                    "printedName": "OmniKernel.OmniSQLFilterExpression",
+                    "usr": "s:10OmniKernel0A19SQLFilterExpressionV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "typeAttributes": [
+                  "noescape"
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC6havingyAcA0A19SQLFilterExpressionVyXEF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC6havingyAcA0A19SQLFilterExpressionVyXEF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "limit",
+            "printedName": "limit(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC5limityACSiF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC5limityACSiF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "offset",
+            "printedName": "offset(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC6offsetyACSiF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC6offsetyACSiF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "innerJoin",
+            "printedName": "innerJoin(_:on:equal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC9innerJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC9innerJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "leftJoin",
+            "printedName": "leftJoin(_:on:equal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC8leftJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC8leftJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "rightJoin",
+            "printedName": "rightJoin(_:on:equal:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLColumn",
+                "printedName": "any OmniKernel.OmniSQLColumn",
+                "usr": "s:10OmniKernel0A9SQLColumnP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC9rightJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC9rightJoin_2on5equalAcA0A8SQLTable_pXp_AA0A9SQLColumn_pAaH_ptF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "crossJoin",
+            "printedName": "crossJoin(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OmniSQLSelectBuilder",
+                "printedName": "OmniKernel.OmniSQLSelectBuilder",
+                "usr": "s:10OmniKernel0A16SQLSelectBuilderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ExistentialMetatype",
+                "printedName": "any OmniKernel.OmniSQLTable.Type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OmniSQLTable",
+                    "printedName": "OmniKernel.OmniSQLTable",
+                    "usr": "s:10OmniKernel0A8SQLTableP"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10OmniKernel0A16SQLSelectBuilderC9crossJoinyAcA0A8SQLTable_pXpF",
+            "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC9crossJoinyAcA0A8SQLTable_pXpF",
+            "moduleName": "OmniKernel",
+            "declAttributes": [
+              "AccessControl",
+              "DiscardableResult"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:10OmniKernel0A16SQLSelectBuilderC",
+        "mangledName": "$s10OmniKernel0A16SQLSelectBuilderC",
+        "moduleName": "OmniKernel",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLJoinType.swift",
+      "kind": "StringLiteral",
+      "offset": 181,
+      "length": 11,
+      "value": "\"LEFT JOIN\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLJoinType.swift",
+      "kind": "StringLiteral",
+      "offset": 210,
+      "length": 12,
+      "value": "\"INNER JOIN\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLJoinType.swift",
+      "kind": "StringLiteral",
+      "offset": 240,
+      "length": 12,
+      "value": "\"RIGHT JOIN\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLJoinType.swift",
+      "kind": "StringLiteral",
+      "offset": 270,
+      "length": 12,
+      "value": "\"CROSS JOIN\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 172,
+      "length": 6,
+      "value": "\"LIKE\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 198,
+      "length": 3,
+      "value": "\">\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 220,
+      "length": 3,
+      "value": "\"<\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 249,
+      "length": 4,
+      "value": "\">=\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 4,
+      "value": "\"<=\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 300,
+      "length": 3,
+      "value": "\"=\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 325,
+      "length": 4,
+      "value": "\"!=\""
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLOperator.swift",
+      "kind": "StringLiteral",
+      "offset": 344,
+      "length": 4,
+      "value": "\"IN\""
+    },
     {
       "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClient.swift",
       "kind": "Dictionary",
@@ -2331,20 +5341,6 @@
       "value": "\"https\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
-      "kind": "StringLiteral",
-      "offset": 167,
-      "length": 6,
-      "value": "\"http\""
-    },
-    {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientScheme.swift",
-      "kind": "StringLiteral",
-      "offset": 191,
-      "length": 7,
-      "value": "\"https\""
-    },
-    {
       "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniResponseError.swift",
       "kind": "StringLiteral",
       "offset": 203,
@@ -2352,39 +5348,25 @@
       "value": "\"No data available\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniResponseError.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
-      "length": 19,
-      "value": "\"No data available\""
-    },
-    {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
-      "kind": "StringLiteral",
-      "offset": 159,
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/OmniSQLite.swift",
+      "kind": "BooleanLiteral",
+      "offset": 519,
       "length": 5,
-      "value": "\"GET\""
+      "value": "false"
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
-      "kind": "StringLiteral",
-      "offset": 181,
-      "length": 6,
-      "value": "\"POST\""
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLFilterExpression.swift",
+      "kind": "Array",
+      "offset": 635,
+      "length": 2,
+      "value": "[]"
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
-      "kind": "StringLiteral",
-      "offset": 203,
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLFilterExpression.swift",
+      "kind": "BooleanLiteral",
+      "offset": 665,
       "length": 5,
-      "value": "\"PUT\""
-    },
-    {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
-      "kind": "StringLiteral",
-      "offset": 227,
-      "length": 8,
-      "value": "\"DELETE\""
+      "value": "false"
     },
     {
       "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientMethod.swift",
@@ -2422,11 +5404,53 @@
       "value": "\"Cannot parse String to URL\""
     },
     {
-      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/Http\/OmniClientError.swift",
-      "kind": "StringLiteral",
-      "offset": 183,
-      "length": 28,
-      "value": "\"Cannot parse String to URL\""
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLStatementBuilder.swift",
+      "kind": "Dictionary",
+      "offset": 213,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "Array",
+      "offset": 259,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "Array",
+      "offset": 877,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "Array",
+      "offset": 928,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "Array",
+      "offset": 1102,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1134,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/Claudio\/Library\/CloudStorage\/OneDrive-Personal\/Development\/iOS\/OmniKernel\/OmniKernel\/Infrastructure\/SQL\/Builder\/OmniSQLSelectBuilder.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1166,
+      "length": 1,
+      "value": "0"
     }
   ]
 }
