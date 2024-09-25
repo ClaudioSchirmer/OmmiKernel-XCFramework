@@ -13,7 +13,7 @@ Key Benefits:
 
 OmniKernel makes it easier for developers, allowing an Android developer to quickly understand iOS code and vice versa.
 
-Documentation: https://www.schirmer.dev.br/overview/omnikernel
+Documentation: [https://www.schirmer.dev.br/overview/omnikernel](https://www.schirmer.dev.br/about-me/omnikernel)
 
 # Example
 ## HttpClient for iOS: 
